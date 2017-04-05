@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IFE JAVASCRIPT TASK 01</title>
+</head>
+<body>
+	
+	<label>
+		请输入今天空气质量：<input type = "text" id ="weather"  >
+		<input type = "button" id = "btn" value ="确认">
+		 <div>
+		 	您输入的是：<input type = "text" id = "result" value="尚未输入"> 	
+		 </div>
+	</label>
+	<script type="text/javascript">
+	var btn = document.getElementById("btn");
+
+	btn.onclick = function(){
+		var weather = document.getElementById("weather").value;
+		console.log(weather);
+	document.getElementById("result").value = weather;
+		
+		
+	}
+	</script>
+</body>
+</html>
